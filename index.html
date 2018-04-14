@@ -11,6 +11,7 @@
 </head>
 <body>
     <h1>This is my H1</h1>
+
     <ul>This is my UL
             <li>list item</li>
             <li>list item</li>
@@ -18,6 +19,9 @@
             <li>list item</li>
     </ul>
     <p>This is a paragraph element</p>
-    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $.get('http://localhost:3000/ping').then(response => console.log(response));
+    </script>
 </body>
 </html>
