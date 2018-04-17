@@ -1,8 +1,4 @@
 const ENV = {};
-const express = require('express');
-const pg = require('pg');
-// const app = express();
-const cors = require('cors');
 
 ENV.isProduction = window.location.protocol === 'https';
 ENV.productionApiUrl = 'https://james-booklist.herokuapp.com';
@@ -33,4 +29,3 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.developmentApiUrl;
 
   module.Book = Book;
 })(app);
-app.use(cors());
